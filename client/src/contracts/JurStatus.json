@@ -4925,9 +4925,68 @@
     "name": "solc",
     "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "5777": {
+      "events": {
+        "0xb965fe859adbfcaf277bb9d21a5de534aa40f5a06a58dbf224de25d789b063a9": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "statusHolder",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "bool",
+              "name": "newState",
+              "type": "bool"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            }
+          ],
+          "name": "StateChanged",
+          "type": "event"
+        },
+        "0xc4d9fcc4d32e8979ac4dd0d6eebc63fbf139c5419a5184ec6cf7b2d0f876024b": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "statusHolder",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "activationTime",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "statusType",
+              "type": "string"
+            }
+          ],
+          "name": "StatusAdded",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x05306Ad6afA8638a01E1D84F9F88A8C4cBEAFfc0",
+      "transactionHash": "0x5cfc9a79b017f87f2ca1a31f5d160800f5fc2230bf5e0fa1231934bff97ac34b"
+    }
+  },
   "schemaVersion": "3.0.23",
-  "updatedAt": "2020-02-17T19:11:48.223Z",
+  "updatedAt": "2020-02-21T18:00:56.037Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {
       "addJurStatus(address,uint256)": {
